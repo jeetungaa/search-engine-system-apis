@@ -48,6 +48,7 @@ async function searchYouTubeVideos(query) {
             key: apiKey
         }
     });
+    
 
     const videoData = response.data.items.map(item => ({
         title: item.snippet.title,
